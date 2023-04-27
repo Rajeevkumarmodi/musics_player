@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    width: 300px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+
+}
+
+.musics-container {
+    text-align: center;
+}
+
+.musics-container h2 {
+    padding-block: 30px;
+}
+
+
+.musics-container>img {
+    width: 220px;
+    height: 160px;
+    clip-path: circle();
+
+}
+
+.img {
+    width: 220px;
+    clip-path: circle();
+}
+
+.musics-container .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.musics-container .buttons img {
+    width: 50px;
+    border-radius: 50%;
+    margin-inline: 25px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+.musics-container .buttons img:hover {
+    box-shadow: 0px 0px 5px 6px gray;
+}
+
+
+/* amymation */
+
+.img {
+
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
